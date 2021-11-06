@@ -7,7 +7,7 @@ import Education from './Education';
 
 const Pages = ({ user }) => {
   return (
-    <Router>
+    <Router basename ={"https://pranavbp.github.io/my-app"}>
       <Switch>
         <Route exact path="/">
           <Me user={user} />
@@ -20,6 +20,9 @@ const Pages = ({ user }) => {
         </Route>
         <Route path="/education">
           <Education user={user} />
+        </Route>
+        <Route path="*">
+         <Me user={user} />
         </Route>
       </Switch>
     </Router>
