@@ -7,7 +7,7 @@ import Education from './Education';
 
 const Pages = ({ user }) => {
   return (
-    <Router basename ={"https://pranavbp.github.io/my-app"}>
+    <Router basename ={"/my-app"}>
       <Switch>
         <Route exact path="/">
           <Me user={user} />
