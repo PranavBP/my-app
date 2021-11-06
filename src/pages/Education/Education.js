@@ -11,7 +11,7 @@ const Education = ({ user }) => {
         <ul>
           {user.education.map((education, i) => (
             <EducationItem key={i}>
-              <Institution>R.V College of Engineering, Bangalore</Institution>
+              <Institution>{education.poistion}</Institution>
               <div>
                 <Degree>
                   {education.studyType}, {education.area}
@@ -22,30 +22,6 @@ const Education = ({ user }) => {
                 </span>
               </div>
               <Paragraph>{education.description.replace('\n\n', '\n')}</Paragraph>
-              <p><hr></hr></p>
-              <Institution>Narayana PU College, Bangalore</Institution>
-              <div>
-                <Degree>
-                  PCMC
-                </Degree>{' '}
-                <span> &sdot; </span>
-                <span>
-                  May, 2014 to June,2016
-                </span>
-              </div>
-              <Paragraph>Percentage: 81.5%</Paragraph>
-              <p><hr></hr></p>
-              <Institution>Narayana E-Techno School, Bangalore</Institution>
-              <div>
-                <Degree>
-                  10th
-                </Degree>{' '}
-                <span> &sdot; </span>
-                <span>
-                  June, 2013 to May,2014
-                </span>
-              </div>
-              <Paragraph>CGPA: 10</Paragraph>
             </EducationItem>
           ))}
         </ul>

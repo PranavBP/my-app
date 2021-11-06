@@ -16,23 +16,10 @@ const Work = ({ user }) => {
                 <JobTitle>{work.company}</JobTitle> <span>{work.location}</span>
                 <span> &sdot; </span>
                 <span>
-                  Jan, 2020 to June, 2020
+                  {work.start.year} to {work.end.year}
                 </span>
               </div>
               <Paragraph>{work.summary}</Paragraph>
-
-              <p><hr></hr></p>
-
-              <WorkTitle>Intern</WorkTitle>
-              <div>
-                <JobTitle>Karnataka State Pollution Control Board</JobTitle> <span>Bangalore</span>
-                <span> &sdot; </span>
-                <span>
-                  May, 2019 to July, 2019
-                </span>
-              </div>
-              <Paragraph>a) Survey on air and noise pollution.</Paragraph>
-              <Paragraph>b) Front end development of various official KSPCB documents using HTML and CSS</Paragraph>
             </WorkItem>
           ))}
         </ul>
