@@ -16,7 +16,7 @@ const Work = ({ user }) => {
                 <JobTitle>{work.company}</JobTitle> <span>{work.location}</span>
                 <span> &sdot; </span>
                 <span>
-                  {work.start.year} to {work.end.year}
+                  {work.start.month}-{work.start.year} to {work.end.month}-{work.end.year}
                 </span>
               </div>
               <Paragraph>{work.summary}</Paragraph>
