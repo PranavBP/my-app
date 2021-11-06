@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://pranavbp.github.io",
+  "homepage": "https://pranavbp.github.io/my-app",
   "dependencies": {
     "@carbon/icons-react": "^10.10.2",
     "@carbon/themes": "^10.11.2",
